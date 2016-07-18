@@ -1,0 +1,8 @@
+body {
+  background-color: red;
+}
+#product img {
+max-width: 20%;
+max-height: 20%;
+
+}
