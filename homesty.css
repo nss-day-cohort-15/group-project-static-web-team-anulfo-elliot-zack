@@ -1,32 +1,77 @@
-#scrollbar {
-	color: white;
-	background-color: #660033;
+header#scroller {
 	width: 100%;
-	margin-top: 0;
 	position: fixed;
 	top: 0;
-	padding: 1em 0 0 0;
-	border: 1px solid black;
+	left: 0;
+	background-color: #990033;
+
 }
 
-header {
-	color: white;
-	background-color: #660033;
+header#spacer {
 	width: 100%;
-	margin-top: 0;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	background-color: #990033;
 }
+
+header#scroller img {
+	width: 50px;
+	height: 80px;
+	float: left;
+	margin: 1em;
+}
+
+header#spacer img {
+	width: 50px;
+	height: 80px;
+	float: left;
+	margin: 1em;
+}
+
 body {
 	color: white;
 	background-color: #4d0026;
 	margin: 0;
 }
 
-
+ul {
+	margin-left: 5%;
+}
 li {
 	display: inline;
 	padding: 0 1em 1em 0;
 }
 
 h1 {	
-	padding-left: 1em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: 900;
+	color: white;
+	font-size: 2.5em;
+	margin-left: 1%;
 }
+
+header img {
+	width: 50px;
+	height: 80px;
+	float: left;
+	margin: 1em;
+}
+
+topper h2 {
+	width: 80%;
+	font-family: "Lucida Sans Unicode", Arial, sans-serif;
+	border: 2px solid black;
+	text-align: center;
+	margin: 2em auto 0 1.8em;
+	display: inline-block;
+}
+
+main {
+	width: 80%;
+	height: 70em;
+	border: 1px solid black;
+	margin: 1em auto 1em auto;
+	background-color: #ffcc66;
+}
+
