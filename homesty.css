@@ -9,7 +9,6 @@ header.scroller {
 
 header.spacer {
 	width: 100%;
-	visibility: hidden;
 	top: 0;
 	left: 0;
 	background-color: #990033;
@@ -101,6 +100,7 @@ div#product {
 		margin: 5em auto 0 auto;
 	}
 }
+
 
 #product header, p {
 	font-family: Roboto, sans-serif;
