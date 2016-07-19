@@ -47,8 +47,8 @@ li {
   background-color: #ffcc66;
 }
 .job_img {
-  width: 600px;
-  height: 500px;
+  max-width: 600px;
+  max-height: auto;
   float: right;
   margin-top: 55px;
 }
