@@ -1,3 +1,4 @@
+
 body {
   background-color: #4d0026;
   color: azure;
@@ -95,15 +96,96 @@ article {
   /**border: 3px dotted azure;**/
 }
 
-#product img {
+header {
+  margin-bottom: 10px;
+}
 
+.product img {
   max-width: 100%;
   max-height: 100%;
 }
 .parag {
-  height: 6em;
+  height: 150px;
 }
 
 .pic_{
   border: 5px solid azure;
 }
+
+.product {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+
+@media (min-width: 1001px) {
+  header {
+    font-size: 1.5em;
+    min-height: 56px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .product article {
+    min-width: 25%;
+  }
+  header {
+    font-size: 1.75em;
+    min-height: 100px;
+  }
+  .parag {
+    height: 190px;
+  }
+  article:nth-of-type(7) {
+    margin-left: 1.5vw;
+    margin-right: 2.5vw;
+  }
+  article:nth-of-type(8) {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .product article {
+    min-width: 33%;
+  }
+  header {
+    font-size: 1.5em;
+    min-height: 50px;
+  }
+  .parag {
+    height: 190px;
+  }  
+  article:nth-of-type(7) {
+    margin: auto;
+  }
+  article:nth-of-type(8) {
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5em;
+  }
+  .product article {
+    display: block;
+    min-width: 85%;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    }
+  header {
+    font-size: 2.5em;
+    min-height: 50px;
+  }
+  .parag {
+    font-size: 1.25em;
+    height: auto;
+  }
+}
+
+
