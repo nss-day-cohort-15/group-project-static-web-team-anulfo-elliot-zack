@@ -5,27 +5,27 @@
 	<link rel="stylesheet" type="text/css" href="homesty.css">
 </head>
 <body>
-   <header id="scroller">
+   <header class="scroller">
         <img src="glassofwine.png" alt="logo">
         <h1>POUR DECISIONS</h1>
-        <navbar>
+        <navbar>    
             <ul>
-                <li>About us</li>
-                <li>Products</li>
-                <li>Listing Jobs</li>
+                <a href="products.html"><li>Home</li></a>
+                <a href="products.html"><li>Products</li></a>
+                <a href="joblistings"><li>Job Listings</li></a> 
             </ul>
         </navbar>
     </header>
  <!--Here comes the fake scrollbar to counter the effect of 
     fixed position. See below.-->
-    <header id="spacer">
+    <header class="spacer">
         <img src="glassofwine.png" alt="logo">
         <h1>POUR DECISIONS</h1>
         <navbar>
             <ul>
-                <li>About us</li>
                 <li>Products</li>
-                <li>Listing Jobs</li>
+                <li>About us</li>
+                <li>Job Listing</li>
             </ul>
         </navbar>
     </header>
@@ -33,13 +33,11 @@
     	<h2>Welcome to the place with the best accesories to enjoy your Wine</h2>	
     </topper>
 
-    <main>
-    	<saleproduct1></saleproduct>
-    	<saleproduct2></saleproduct>
-    	<saleproduct3></saleproduct3>
-    </main>
+    <div id="product">
+    </div>
     <footer>
     &copy AnZaEl Inc. All rights reserved.
     </footer>
+    <script type="text/javascript" src="productsindex.js"></script>
 </body>
 </html>

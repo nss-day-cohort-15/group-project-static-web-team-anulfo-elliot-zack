@@ -1,4 +1,4 @@
-header#scroller {
+header.scroller {
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -7,7 +7,7 @@ header#scroller {
 
 }
 
-header#spacer {
+header.spacer {
 	width: 100%;
 	visibility: hidden;
 	top: 0;
@@ -15,14 +15,14 @@ header#spacer {
 	background-color: #990033;
 }
 
-header#scroller img {
+header.scroller img {
 	width: 50px;
 	height: 80px;
 	float: left;
 	margin: 1em;
 }
 
-header#spacer img {
+header.spacer img {
 	width: 50px;
 	height: 80px;
 	float: left;
@@ -39,15 +39,17 @@ ul {
 	margin-left: 5%;
 }
 li {
+	font-family: Roboto, sans-serif;
 	display: inline;
 	padding: 0 1em 1em 0;
 }
-
-h1 {	
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: 900;
+a {
+	text-decoration: none;
 	color: white;
-	font-size: 2.5em;
+}
+h1 {	
+	font-family: Roboto, Geneva, sans-serif;
+	color: white;
 	margin-left: 1%;
 }
 
@@ -60,18 +62,59 @@ header img {
 
 topper h2 {
 	width: 80%;
-	font-family: "Lucida Sans Unicode", Arial, sans-serif;
-	border: 2px solid black;
+	font-family: Roboto, Arial, sans-serif;
+	color: #ffcc66;
 	text-align: center;
-	margin: 2em auto 0 1.8em;
+	margin: 50px;
 	display: inline-block;
 }
 
-main {
+div#product {
 	width: 80%;
-	height: 70em;
-	border: 1px solid black;
+	height: 60em;
 	margin: 1em auto 1em auto;
 	background-color: #ffcc66;
 }
+
+#product article {
+	max-width: 30%;
+	max-height: 40%;
+	margin: 2em 2em 2em 5em;
+	padding: 30px;
+	background-color: #993333;
+	display: inline-block;
+}
+#product img {
+	width: 50%;
+	height: 40%;
+	margin-left: 4em;
+}
+
+#product .parag {
+	height: 6em;
+}
+
+@media (min-width: 701px) {
+	#product article:nth-of-type(3) {
+		display: block;
+		float: none;
+		margin: 5em auto 0 auto;
+	}
+}
+
+#product header, p {
+	font-family: Roboto, sans-serif;
+	color: #ffcc66;
+}
+
+#product header {
+	width: 100%;
+	text-align: center;
+}
+
+#product p {
+	width: 100%;
+	text-align: justify;
+}
+
 
