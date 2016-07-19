@@ -16,7 +16,7 @@ price:"29.95", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/
 
 var advancecork = {name:"Le Creuset", description:"With a bold, geometric design built to work with both synthetic and natural corks, the Advanced Lever features patented rotation technology for fast and effortless cork removal", price:"199.95", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/n/w/1500/29728.jpg"}
 
-var winefridge = {name:"Silent Wine Refrigeretaor", description:"Two zones for storage and service! The Wine Enthusiast 32 Bottle Dual Zone Touchscreen Wine Refrigerator is thermoelectric, energy-efficient and CFC-free.", price:"359", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/n/w/1500/17927.jpg"}
+var winefridge = {name:"Silent Wine Refrigeretaor", description:"Two zones for storage and service! The Wine Enthusiast 32 Bottle Dual Zone Touchscreen Wine Refrigerator is thermoelectric, energy-efficient and CFC-free.", price:"359.95", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/n/w/1500/17927.jpg"}
 
 var winebarrel = {name:"American Oak Barrel", description:"Preserve your wine in an authentic wine barrel",
 price:"69.95", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/n/w/465/35795_1.jpg"}
@@ -24,6 +24,6 @@ price:"69.95", url: "http://wineenthusiast.scene7.com/is/image/WineEnthusiast/f/
 var wineproducts = [corkscrew, winestop, wineair, winecave, bottlehold, advancecork, winefridge, winebarrel];
 //document.getElementById.innerHTML(product) += "<header>" + test + "</header>";//
 for (i = 0; i < wineproducts.length; i++) {
-document.getElementById("product").innerHTML += `<header> ${ wineproducts[i].name } </header><p>${wineproducts[i].description}
-</p><p>${wineproducts[i].price}</p><a href=${ wineproducts[i].url }><img src= ${wineproducts[i].url}></a>`;
+document.getElementById("product").innerHTML += `<article><header> ${ wineproducts[i].name } </header><p class="parag">${wineproducts[i].description}
+</p><p>${wineproducts[i].price}</p><a href=${ wineproducts[i].url }><img src= ${wineproducts[i].url}></a></article>`;
   }
